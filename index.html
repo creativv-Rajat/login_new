@@ -5,35 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGNUP PAGE</title>
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="style.css">
-        
- <script src="https://accounts.google.com/gsi/client" async></script>       
+        <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     
 <div class ="form-container">
-    <h2>Login</h2><br>
-    <form action = "/login.ejs" method = "post">
+    <h2>Login</h2>
+    <form action = "/login" method = "post">
         <div class = "form-group">
             <label for="name">Name:</label>
             <input type = "text" id="name" name="username" palceholder="Enter username" required autocomplete="off">
         </div>
         <div class = "form-group">
-            <label for="password">Password:</label>
-            <input type = "password" id="password" name="password" palceholder="Enter password" required >
+            <label for="roomname">RoomName:</label>
+            <input type = "text" id="roomname" name="roomname" palceholder="Enter RoomName" required >
         </div>
-        <button type="submit" class = "submit-btn">signup</button>
-       <p>Don't have an account?<a href="/signup">Signup</a></p><br>
-       
-      
-     <hr>
-     <span class="stylespan">Or</span>
-     <br>
-     
-     
-    
-        <button type="button" class="style" onclick="window.location.href='continueasguest.html'"><img src="unkown_person.png">Continue as Guest</button>
+        <div class = "form-group">
+            <label for="password">TeamCode:</label>
+            <input type = "password" id="password" name="password" palceholder="Enter TeamCode" required >
+        </div>
+        <button type="submit" class = "submit-btn">Login</button><br><br>
+        <div class="style">━━━━━━━ Or ━━━━━━━</div><br>
+         <script src="https://accounts.google.com/gsi/client" async></script> 
         <div id="g_id_onload"
          data-client_id="418723616611-rbav31s2tn0as2thfugqf0g6gtpg1n5m.apps.googleusercontent.com"
          data-login_uri="https://main--sketchquest.netlify.app"
@@ -47,13 +40,10 @@
          data-theme="outline"
          data-text="sign_in_with"
         data-logo_alignment="center"
-         data-width="260"
+        data-width="500px"
          ></div>
-    
-        </form>
-    </body>  
-   
-   
+    </form>
+    <p> Don't have an account?<a href="/signup">Signup</a></p>
 </div>
 
       
