@@ -1,87 +1,56 @@
-*{
-  margin:0;
-  padding:0;
-  font-family:'Poppins',sans-serif;
-  box-sizing:border-box;
-}
-body{
-  background:green
-}
-
-.form-container button img{
-  width:18px;
-  margin-right:10px;
-}
-.form-container button{
-  width:100%;
-  padding:10px 0;
-  display: flex;
-  align-items:center;
-  justify-content:center;
-  margin:20px 0;
-  border-radius:30px;
- /* background:transparent;*/
-  border:1px solid #999;
-  font-weight: 500;
-  cursor:pointer;
-}
-.form-container{
-  background:rgb(255,255,255);
-  padding:30px 120px;
-  width:550px;
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  text-align:left;
-  border-radius:10px;
-
-
-
+body {
+    margin: 0;
+    padding: 0;
+    background: url('mars.jpg') no-repeat center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
 }
 
-.form-container hr{
-  border:0;
-  height:1px;
-  background:#c2c2c2;
-  margin:5px;
-
-}
-.stylespan{
-  display:block;
-  width:40px;
-  margin:auto;
-  background:#fff;
-  font-size:14px;
-  margin-top:-16px;
-}
-.style {
-  background-color: #04AA6D; /* Green */
-  border: none;
-  color: white;
-  width:100%;
-  height:20%;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius:4px;
-  
+.form-container {
+    width: 500px;
+    height:650px;
+    background-color: rgba(255, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-img{border-radius:50%;
-   height:auto;
-   width:2%;
+h2 {
+    text-align: center;
+    color: black;
 }
-button:hover {
-cursor: pointer;
-}
-label,input{
-  display: block;
-}
-h2{text-align: center;}
 
-    
-    
-    
-    
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+            margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: rgb(88, 18, 77);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+.style{color:antiquewhite;}
